@@ -41,7 +41,7 @@ jobs:
     - name: Run Kafka KRaft Broker
       uses: spicyparrot/kafka-kraft-action@v1.1.0
       with:
-        kafka-version: "3.6.1"
+        kafka-version: "3.7.0"
         kafka-topics: "example,1"
 
     # kafka_runner_address env var created by the above step
@@ -67,7 +67,7 @@ We override that env var with the `kafka_runner_address` env var created by the 
 ### Inputs
 
 - **`kafka-version`**
-  - **Default:** `"3.6.1"`
+  - **Default:** `"3.7.0"`
   - **Description:** Version of Kafka to use
   - **Required:** *False* (Defaults to `3.6.1`)
 
