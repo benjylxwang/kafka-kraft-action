@@ -1,6 +1,6 @@
-name: "Kafka KRaft"
-description: "Creates a simple Kafka KRaft broker for integration testing"
-author: "Spicy Parrot"
+name: "Kafka KRaft Docker Compose"
+description: "Creates a simple Kafka KRaft broker for integration testing - Fork to fix Docker Compose"
+author: "benjylxwang"
 branding:
   icon: "alert-circle"
   color: "purple"
@@ -20,7 +20,7 @@ runs:
     - name: 🏗 Checkout Kafka kraft repo
       uses: actions/checkout@v4
       with:
-        repository: spicyparrot/kafka-kraft-action
+        repository: benjylxwang/kafka-kraft-action
         path: "kafka"
 
     - name: 🧠 Bring up KRaft Broker
